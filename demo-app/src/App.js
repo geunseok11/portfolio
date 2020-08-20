@@ -20,6 +20,11 @@ export default function App() {
             </li>
           </ul>
         </nav>
+        <div>
+          <div>
+            저의 홈페이지에 오신것을 환영합니다. 저는 fornt-end 개발자입니다.
+          </div>
+        </div>
 
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
@@ -44,9 +49,9 @@ function Home() {
 }
 
 function About() {
-  return <h2>About</h2>;
+  return <h2>About </h2>;
 }
 
 function Users() {
-  return <h2>Users</h2>;
+  return <h2>Users : 정근석</h2>;
 }
