@@ -2,6 +2,7 @@ import React from "react";
 // import logo from "./logo.svg";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Users from "./user";
 
 export default function App() {
   return (
@@ -50,8 +51,4 @@ function Home() {
 
 function About() {
   return <h2>About </h2>;
-}
-
-function Users() {
-  return <h2>Users : 정근석</h2>;
 }
