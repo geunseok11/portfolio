@@ -2,7 +2,9 @@ import React from "react";
 // import logo from "./logo.svg";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Users from "./user";
+import Users from "./pages/user";
+import About from "./pages/about";
+import Home from "./pages/home";
 
 export default function App() {
   return (
@@ -43,12 +45,4 @@ export default function App() {
       </div>
     </Router>
   );
-}
-
-function Home() {
-  return <h2>Home</h2>;
-}
-
-function About() {
-  return <h2>About </h2>;
 }
