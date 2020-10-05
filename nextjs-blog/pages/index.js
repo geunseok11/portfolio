@@ -11,12 +11,57 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1 className="title">
-          Read{" "}
-          <Link href="/posts/first-post">
-            <a>this page!</a>
-          </Link>
-        </h1>
+        <nav
+          className="navbar navbar-expand-lg navbar-dark fixed-top"
+          id="mainNav"
+        >
+          <div className="container">
+            <a className="navbar-brand js-scroll-trigger" href="#page-top">
+              {/* <img src="assets/img/navbar-logo.svg" alt="" /> */}
+            </a>
+            <button
+              className="navbar-toggler navbar-toggler-right"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarResponsive"
+              aria-controls="navbarResponsive"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              Menu
+              {/* <i className="fas fa-bars ml-1"></i> */}
+            </button>
+            <div className="collapse navbar-collapse" id="navbarResponsive">
+              <ul className="navbar-nav text-uppercase ml-auto">
+                <li className="nav-item">
+                  <a className="nav-link js-scroll-trigger" href="#services">
+                    Services
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link js-scroll-trigger" href="#portfolio">
+                    Portfolio
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link js-scroll-trigger" href="#about">
+                    About
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link js-scroll-trigger" href="#team">
+                    Team
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link js-scroll-trigger" href="#contact">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
 
         <h1 className="title">
           GeunSeok's{" "}
@@ -28,6 +73,27 @@ export default function Home() {
         <p className="description">
           Get started by editing <code>pages/index.js</code>
         </p>
+
+        <div id="jb-container">
+          <div id="jb-header">
+            <h1>Responsive Layout</h1>
+          </div>
+          <div id="jb-content">
+            <h2>Content</h2>
+            <p>반응형 웹 구현 예시</p>
+          </div>
+          <div id="jb-sidebar">
+            <h2>Sidebar</h2>
+            <ul>
+              <li>profile</li>
+              <li>about</li>
+              <li>contact</li>
+            </ul>
+          </div>
+          <div id="jb-footer">
+            <p>Copyright</p>
+          </div>
+        </div>
 
         <div className="grid">
           <a href="https://nextjs.org/docs" className="card">
@@ -72,13 +138,48 @@ export default function Home() {
       </footer>
 
       <style jsx>{`
-        .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
+        #jb-container {
+          width: 940px;
+          margin: 10px auto;
+          padding: 20px;
+          border: 1px solid #bcbcbc;
+        }
+        #jb-header {
+          padding: 20px;
+          margin-bottom: 20px;
+          border: 1px solid #bcbcbc;
+        }
+        #jb-content {
+          width: 580px;
+          padding: 20px;
+          margin-bottom: 20px;
+          float: left;
+          border: 1px solid #bcbcbc;
+        }
+        #jb-sidebar {
+          width: 260px;
+          padding: 20px;
+          margin-bottom: 20px;
+          float: right;
+          border: 1px solid #bcbcbc;
+        }
+        #jb-footer {
+          clear: both;
+          padding: 20px;
+          border: 1px solid #bcbcbc;
+        }
+        @media (max-width: 800px) {
+          #jb-container {
+            width: auto;
+          }
+          #jb-content {
+            float: none;
+            width: auto;
+          }
+          #jb-sidebar {
+            float: none;
+            width: auto;
+          }
         }
 
         main {
