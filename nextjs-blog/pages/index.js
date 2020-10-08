@@ -70,9 +70,7 @@ export default function Home() {
           </Link>
         </h1>
 
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
+        <p className="description">안녕하세요</p>
 
         <div id="jb-container">
           <div id="jb-header">
