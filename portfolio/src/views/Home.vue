@@ -73,6 +73,14 @@
         </tr>
         </table>
         <div>
+          <div>
+  <b-button v-b-modal.modal-1>간단 프로필</b-button>
+
+  <b-modal id="modal-1" title="BootstrapVue">
+    <p class="my-4">name : {{name}}</p>
+    <p class="my-4">birth : {{birth}}</p>
+  </b-modal>
+</div>
   <b-link href="about">Link</b-link>
 </div>
     </div>
@@ -84,7 +92,8 @@ export default {
             slide: 0,
             sliding: null,
             title: '개발자임',
-            title2: "seoul",
+            name: "정근석",
+            birth: "90.08.22",
             input1: "abc",
             options:[
                 {v:"S", t:"Seoul"},
