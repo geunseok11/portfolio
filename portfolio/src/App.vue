@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header />
-    <!-- <Card /> -->
+
     <div id="content" class="content">
       <router-view></router-view>>
     </div>
@@ -16,6 +16,7 @@ export default {
   name: 'App',
   components: {
     Header,
+
   }
 }
 </script>

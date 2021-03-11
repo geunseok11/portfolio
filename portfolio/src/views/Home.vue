@@ -83,6 +83,7 @@
 </div>
   <b-link href="about">Link</b-link>
 </div>
+
 <div>
   <b-container fluid class="p-4 bg-dark">
   <b-row>
@@ -98,6 +99,7 @@
   </b-row>
 </b-container>
 </div>
+
 <div class="mt-4">
     <h4>Left and Right (or Start and End)</h4>
     <b-card img-src="https://placekitten.com/300/300" img-alt="Card image" img-left class="mb-3">
@@ -112,6 +114,7 @@
       </b-card-text>
     </b-card>
   </div>
+
     </div>
 </template>
 <script>
