@@ -83,6 +83,35 @@
 </div>
   <b-link href="about">Link</b-link>
 </div>
+<div class="mt-4">
+    <h4>Left and Right (or Start and End)</h4>
+    <b-card img-src="https://placekitten.com/300/300" img-alt="Card image" img-left class="mb-3">
+      <b-card-text>
+        Some quick example text to build on the card and make up the bulk of the card's content.
+      </b-card-text>
+    </b-card>
+
+    <b-card img-src="https://placekitten.com/300/300" img-alt="Card image" img-right>
+      <b-card-text>
+        Some quick example text to build on the card and make up the bulk of the card's content.
+      </b-card-text>
+    </b-card>
+  </div>
+  <div>
+    <b-container fluid class="p-4 bg-dark">
+  <b-row>
+    <b-col>
+      <b-img thumbnail fluid src="https://picsum.photos/250/250/?image=54" alt="Image 1"></b-img>
+    </b-col>
+    <b-col>
+      <b-img thumbnail fluid src="https://picsum.photos/250/250/?image=58" alt="Image 2"></b-img>
+    </b-col>
+    <b-col>
+      <b-img thumbnail fluid src="https://picsum.photos/250/250/?image=59" alt="Image 3"></b-img>
+    </b-col>
+  </b-row>
+</b-container>
+  </div>
     </div>
 </template>
 <script>
