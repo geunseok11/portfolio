@@ -10,13 +10,12 @@
 
 <script>
 import Header from './components/layout/Header.vue'
-import Card from './components/layout/Card.vue'
+
 
 export default {
   name: 'App',
   components: {
     Header,
-    Card,
   }
 }
 </script>
